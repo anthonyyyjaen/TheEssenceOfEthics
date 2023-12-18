@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color: lightgray;
+}
+
+body {
+    background-color: #2a1f3b;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #140C21;
+    padding: 0 50px;
+    height: 70px;
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* BODY */
+h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.group {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "creator1 creator2 creator3 creator4";
+}
+
+.creator1, .creator2, .creator3, .creator4 {
+    text-align: center;
+    
+}
+
+.name {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.image1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(Creator/1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+}
+
+.image2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(Creator/2.webp);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+}
+
+.image3 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(Creator/3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+}
+
+.image4 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(Creator/4.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+    animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+h5 {
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+    font-weight:lighter
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.divider {
+    position: relative;
+    border-top:1px solid #bbb ;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 50%;
+    margin: 100px 0 100px 0;
+}
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    top: 200px;
+    background-color: #140C21;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h6 {
+    color: gray;
+    top: 50%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    h2 {
+        padding: 50px 20px;
+        font-size: 30px;
+    }
+
+    p {
+        padding: 20px 50px;
+        font-size: 15px;
+    }
+
+    .group {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        row-gap: 100px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "creator1"
+        "creator2"
+        "creator3"
+        "creator4"
+        ;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    h2 {
+        padding: 50px 20px;
+        font-size: 30px;
+    }
+
+    p {
+        padding: 20px 50px;
+        font-size: 15px;
+    }
+
+    .group {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        row-gap: 100px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "creator1"
+        "creator2"
+        "creator3"
+        "creator4"
+        ;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h2 {
+        padding: 50px 10px;
+    }
+    p {
+        padding: 20px 100px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .group {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        row-gap: 100px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "creator1 creator2"
+        "creator3 creator4"
+        ;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h2 {
+        padding: 50px 10px;
+    }
+    p {
+        padding: 20px 100px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        padding: 50px 10px;
+    }
+    p {
+        padding: 20px 100px;
+    }
+
+    li a {
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        padding: 50px 100px;
+    }
+    p {
+        padding: 50px 200px;
+    }
+
+    .group {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas: "creator1 creator2 creator3 creator4";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        padding: 100px 200px;
+    }
+    p {
+        padding: 50px 300px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,280 @@
+/* HEADER */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/Images/13.png);
+    background-size: cover;
+    background-position-y: 600px;
+    background-attachment: fixed;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #140C21;
+    padding: 0 50px;
+    height: 70px;
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/* CONTENT */
+
+.content {
+    position: relative;
+    top: 200px;
+    background-color: white;
+    padding: 100px 600px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.content a {
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    top: 200px;
+    background-color: #140C21;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h6 {
+    color: gray;
+    top: 50%;
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    body {
+        background-position-y: 550px;
+        background-position-x: -550px;
+    }
+
+    .content {
+        padding: 100px 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    body {
+        background-position-y: 550px;
+        background-position-x: -550px;
+    }
+
+    .content {
+        padding: 100px 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    h1 {
+        font-size: 26px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    body {
+        background-position-y: 500px;
+        background-position-x: -350px;
+    }
+
+    .content {
+        padding: 100px 100px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-position-y: 500px;
+        background-position-x: -250px;
+    }
+
+    li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 100px 150px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        padding: 100px 100px;
+    }
+
+    body {
+        background-position-y: 500px;
+        background-position-x: -160px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-position-y: 500px;
+        background-position-x: 0;
+    }
+    .content {
+        padding: 100px 200px;
+    }
+    li a {
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .content {
+        padding: 100px 300px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .content {
+        padding: 100px 400px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .content {
+        padding: 100px 600px;
+    }
+}
